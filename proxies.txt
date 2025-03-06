@@ -1,4 +1,1 @@
-socks5://user1:pass123@192.168.1.1:1080
-http://proxyuser:proxy_pass@172.0.0.1:8080
-socks4://142.251.42.193:1080  # No authentication
-185.199.110.15:8060           # Basic IP:PORT format <button class="citation-flag" data-index="1"><button class="citation-flag" data-index="8">
+protocol://user:pass@ip:port
