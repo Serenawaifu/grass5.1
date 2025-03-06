@@ -1,3 +1,5 @@
+# telegram_bot.py
+from config import TELEGRAM_BOT_TOKEN
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 
@@ -12,7 +14,7 @@ async def add_account(update: Update, context):
     await update.message.reply_text(f"✅ Account {email} added. Proxy assigned: {proxy}")
 
 # Register handlers
-app = ApplicationBuilder().token("YOUR_TELEGRAM_BOT_TOKEN").build()
+app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 app.add_handler(CommandHandler("start", start))
 app.add_handler(CommandHandler("add_account", add_account))
 # Add other commands like /profile, /accounts, etc.
